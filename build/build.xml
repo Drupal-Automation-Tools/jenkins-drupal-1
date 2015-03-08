@@ -885,7 +885,7 @@ called from `init` target. -->
       <isset property="drupal.make.dir"/>
       <then>
         <property name="project.drupal.dir"
-                value="${project.basedir}/${drupal.make.dir}" />
+                value="${project.basedir}/../" />
       </then>
       <else>
         <property name="project.drupal.dir"
@@ -896,9 +896,9 @@ called from `init` target. -->
     <property name="project.sitesdir"
               value="${project.drupal.dir}/${project.code.dir}" />
     <property name="project.builddir"
-              value="${project.basedir}/build" />
+              value="${project.basedir}/../build" />
     <property name="project.toolsdir"
-              value="${project.builddir}/tools" />
+              value="${project.builddir}/../vendor/bin" />
     <property name="project.coveragedir"
               value="${project.builddir}/coverage" />
     <property name="project.logdir"
