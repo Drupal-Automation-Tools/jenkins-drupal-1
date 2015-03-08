@@ -818,7 +818,7 @@ tools. -->
       <param value="${phing.file}"/>
     </php>
 
-    <property name="project.basedir" value="${phing.dir}" />
+    <property name="project.basedir" value="${phing.dir}/../" />
 
     <!-- Use condition instead of unless property as we cannot unset properties in Phing -->
     <if>
@@ -889,7 +889,7 @@ called from `init` target. -->
       </then>
       <else>
         <property name="project.drupal.dir"
-                value="${project.basedir}" />
+                value="${project.basedir}/../" />
       </else>
     </if>
 
