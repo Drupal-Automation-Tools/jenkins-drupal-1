@@ -854,9 +854,9 @@ root directory. -->
 
         <!-- Allow override using `build.properties` in build file
              directory -->
-        <available file="${phing.dir}/build.properties"
+        <available file="${phing.dir}/../build.properties"
                    property="project.properties.file"
-                   value="${phing.dir}/build.properties" />
+                   value="${phing.dir}/../build.properties" />
         <!-- Allow override using `build.properties` in project base
              directory -->
         <available file="${project.basedir}/build.properties"
@@ -894,7 +894,7 @@ called from `init` target. -->
     </if>
 
     <property name="project.sitesdir"
-              value="${project.drupal.dir}/${project.code.dir}" />
+              value="${project.drupal.dir}/../${project.code.dir}" />
     <property name="project.builddir"
               value="${project.basedir}/../build" />
     <property name="project.toolsdir"
