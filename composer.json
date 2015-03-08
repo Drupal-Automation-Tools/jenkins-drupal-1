@@ -1,0 +1,22 @@
+{
+  "name": "rslv/learning-jenkins",
+  "description": "Projeto para aprender o uso do Drupal Template",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Renato Biancalana da Silva",
+      "email": "renato.biancalana.silva@gmail.com"
+    }
+  ],
+  "require": {
+    "phing/phing": "3.0.x-dev",
+    "sebastian/phpcpd": "2.0.1",
+    "phpmd/phpmd": "2.2.1",
+    "phploc/phploc": "2.0.6",
+    "phpdocumentor/phpdocumentor": "3.0-dev",
+    "squizlabs/php_codesniffer": "2.3.0",
+    "pear/http_request2": "v2.2.1",
+    "mayflower/php-codebrowser": "1.1.1"
+  }
+}
